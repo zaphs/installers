@@ -1,0 +1,23 @@
+{
+  "name": "wallox/installers",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "description": "Extension for Composer library installer to install Oxwall plugins and themes",
+  "authors": [
+    {
+      "name": "Zarif Safiullin",
+      "email": "zaph.work@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wallox\\Installers\\": "src/Wallox/Installers"
+    }
+  },
+  "require": {
+    "composer-plugin-api": "^1.0"
+  },
+  "extra": {
+    "class": "Wallox\\Installers\\Plugin"
+  }
+}
