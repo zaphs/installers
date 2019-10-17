@@ -8,10 +8,13 @@ use Composer\Plugin\PluginInterface;
 
 class Plugin implements PluginInterface
 {
+    private $supportedTypes = [
+        'oxwall' => 'OxwallInstaller'
+    ];
 
     public function activate(Composer $composer, IOInterface $io)
     {
-        $installer = new OxwallInstaller($io, $composer);
+        $installer = new Installer($io, $composer);
         $composer->getInstallationManager()->addInstaller($installer);
     }
 }
