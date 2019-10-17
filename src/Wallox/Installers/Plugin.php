@@ -5,6 +5,7 @@ namespace Wallox\Installers;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
+use Composer\Installers\Installer;
 
 class Plugin implements PluginInterface
 {
